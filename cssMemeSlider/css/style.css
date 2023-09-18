@@ -1,7 +1,121 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 body {
   background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  width: 70%;
+  height: 90vh;
+  padding: 30px;
+  border: 10px solid white;
+  background-color: #25282a;
+}
+
+.slides-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.slides {
+  /* background-color: red; */
+  height: 100%;
+  overflow-x: hidden;
+}
+.slides-container {
+  display: flex;
+  width: 400%;
+  height: 80%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.slide {
+  width: 25%;
+  transition: all 0.5s ease;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signatures-wrapper {
+  overflow: hidden;
+}
+.signatures {
+  width: 400%;
+  display: flex;
+ 
+  /* transition: all 0.5s ease; */
+}
+.signature {
+  width: 25%;
+}
+.signature p {
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  text-align: start;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.navigation {
+  display: flex;
+}
+.nav-wrapper {
+  cursor: pointer;
+  padding: 5px;
+}
+.nav {
+  display: inline-block;
+  height: 10px;
+  width: 30px;
+  margin: 10px;
+  background-color: #ddd;
+  opacity: 0.5;
+  transition: all 0.4s ease;
+}
+.nav:hover {
+  cursor: inherit;
+  opacity: 1;
+  transform: scale(1.1);
+}
+input[name='radio'] {
+  display: none;
+  visibility: hidden;
+}
+#slide1:checked ~ .slides-container > .s1 {
+  margin-left: 0;
+}
+#slide2:checked ~ .slides-container > .s1 {
+  margin-left: -25%;
+}
+#slide3:checked ~ .slides-container > .s1 {
+  margin-left: -50%;
+}
+#slide4:checked ~ .slides-container > .s1 {
+  margin-left: -75%;
+}
+
+#slide1:checked ~ .flex > .signatures-wrapper > .signatures {
+  transform: translateX(0);
+}
+#slide2:checked ~ .flex > .signatures-wrapper > .signatures {
+  transform: translateX(-25%);
+}
+#slide3:checked ~ .flex > .signatures-wrapper > .signatures {
+  transform: translateX(-50%);
+}
+#slide4:checked ~ .flex > .signatures-wrapper > .signatures {
+  transform: translateX(-75%);
 }

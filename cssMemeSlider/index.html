@@ -1,30 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <div class="slider">
-    <div class="slides">
-      <input type="radio" name="radio" id="slide1" checked>
-      <input type="radio" name="radio" id="slide2">
-      <input type="radio" name="radio" id="slide3">
-      <input type="radio" name="radio" id="slide4">
+    <div class="slides-wrapper">
+      <div class="slides">
+        <input type="radio" name="radio" id="slide1" checked>
+        <input type="radio" name="radio" id="slide2">
+        <input type="radio" name="radio" id="slide3">
+        <input type="radio" name="radio" id="slide4">
 
-      <div class="slide"><img src="" alt=""></div>
-      <div class="slide"><img src="" alt=""></div>
-      <div class="slide"><img src="" alt=""></div>
-      <div class="slide"><img src="" alt=""></div>
-    </div>
-    <div class="navigation">
-      <label for="slide1" class="nav"></label>
-      <label for="slide2" class="nav"></label>
-      <label for="slide3" class="nav"></label>
-      <label for="slide4" class="nav"></label>
+        <div class="slides-container">
+          <div class="slide s1">
+            <img src="img/merkurij.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="img/venera.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="img/zemlia.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="img/mars.jpg" alt="">
+          </div>
+        </div>
+        <div class="flex">
+          <div class="signatures-wrapper">
+            <div class="signatures">
+              <div class="signature s2">
+                <p>Меркурий</p>
+              </div>
+              <div class="signature">
+                <p>Венера</p>
+              </div>
+              <div class="signature">
+                <p>Земля</p>
+              </div>
+              <div class="signature">
+                <p>Марс</p>
+              </div>
+            </div>
+          </div>
+          <div class="navigation">
+            <div class="nav-wrapper">
+              <label for="slide1" class="nav"></label>
+            </div>
+            <div class="nav-wrapper">
+              <label for="slide2" class="nav"></label>
+            </div>
+            <div class="nav-wrapper">
+              <label for="slide3" class="nav"></label>
+            </div>
+            <div class="nav-wrapper">
+              <label for="slide4" class="nav"></label>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
+
 </html>
