@@ -31,7 +31,6 @@ body {
 .slides-container {
   display: flex;
   width: 400%;
-  height: 80%;
   overflow: hidden;
   margin-bottom: 20px;
 }
